@@ -10,7 +10,6 @@ class Solution {
                      batteryPercentages[j]--;
                  }
             }
-            else continue;
         }
         return count;
     }
