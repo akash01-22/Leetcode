@@ -1,9 +1,7 @@
 class Solution {
     public boolean winnerOfGame(String colors) {
-        int aliceCount = 0;
-        int bobCount = 0;
-        int consecutiveA = 0;
-        int consecutiveB = 0;
+        int aliceCount = 0, consecutiveA = 0;
+        int bobCount = 0, consecutiveB = 0;
         for (char ch : colors.toCharArray()) {
 
             if (ch == 'A') {
