@@ -8,6 +8,7 @@ class Solution {
             stones[n - 1] = max1 - max2;
             stones[n - 2] = 0;
         }
+        Arrays.sort(stones);
         return stones[n - 1];
     }
 }
