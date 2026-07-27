@@ -4,7 +4,7 @@ class Solution {
         int max2 = Integer.MIN_VALUE;
         int max3 = Integer.MIN_VALUE;
         int min1 = Integer.MAX_VALUE;
-        int min2 = Integer.MIN_VALUE;
+        int min2 = Integer.MAX_VALUE;
         for (int i = 0; i < nums.length; i++) {
             if (max1 <= nums[i]) {
                 max3 = max2;
