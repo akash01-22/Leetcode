@@ -1,6 +1,5 @@
 class Solution {
     public String truncateSentence(String s, int k) {
-        String[] arr = s.split(" ");
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == ' ')
                 k--;
