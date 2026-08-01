@@ -22,7 +22,7 @@ class Solution {
             if (set1.contains(num))
                 result.add(num);
         }
-        ArrayList<Integer> list = new ArrayList<>(result);
-        return list;
+       // ArrayList<Integer> list = new ArrayList<>(result);
+        return new ArrayList<>(result);
     }
 }
