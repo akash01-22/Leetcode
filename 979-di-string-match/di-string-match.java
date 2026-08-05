@@ -1,15 +1,17 @@
 class Solution {
     public int[] diStringMatch(String s) {
-        int[] arr = new int[s.length() + 1];
+        char[] ch = s.toCharArray();
+        int n = ch.length;
+        int[] arr = new int[n + 1];
         int left = 0;
-        int right = s.length();
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == 'I')
+        int right = n;
+        for (int i = 0; i < n; i++) {
+            if (ch[i] == 'I')
                 arr[i] = left++;
             else
                 arr[i] = right--;
         }
-        arr[s.length()] = left;
+        arr[n] = left;
         return arr;
     }
 }
