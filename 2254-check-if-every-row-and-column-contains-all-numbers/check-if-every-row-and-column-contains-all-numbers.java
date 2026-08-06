@@ -2,21 +2,21 @@ class Solution {
     public boolean checkValid(int[][] matrix) {
         int n = matrix.length;
         for (int i = 0; i < n; i++) {
-            HashSet<Integer> set1 = new HashSet<>();
+            int[] freq = new int[n + 1];
             for (int j = 0; j < n; j++) {
-                if (set1.contains(matrix[i][j])) {
+                freq[matrix[i][j]]++;
+                if (freq[matrix[i][j]] > 1) {
                     return false;
                 }
-                set1.add(matrix[i][j]);
             }
         }
         for (int j = 0; j < n; j++) {
-            HashSet<Integer> set2 = new HashSet<>();
+            int[] freq = new int[n + 1];
             for (int i = 0; i < n; i++) {
-                if (set2.contains(matrix[i][j])) {
+                freq[matrix[i][j]]++;
+                if (freq[matrix[i][j]] > 1) {
                     return false;
                 }
-                set2.add(matrix[i][j]);
             }
         }
         return true;
